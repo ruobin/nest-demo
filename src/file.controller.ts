@@ -1,6 +1,7 @@
 import { Controller, FileTypeValidator, Get, MaxFileSizeValidator, ParseFilePipe, Post, UploadedFile, UseInterceptors } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express/multer';
 import { FileService } from './file.service';
+
 var AWS = require('aws-sdk');
 
 @Controller('file')
